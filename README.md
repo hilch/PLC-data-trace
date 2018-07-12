@@ -13,6 +13,9 @@ set 'g_dataTrace.enable' to FALSE stops trace and write the CSV.
 set g_DATA_TRACE_FILEDEVICE to name of file device
 set g_MAX_DATA_TRACE_RECORDS to maximum number of plc cycles that should be stored
 set g_MAX_DATA_TRACE_VARNUM_MINUS1 to maximum number of trace variables (-1)
+write CSV column names to g_dataTraceColumns[] 
+
+
 
 use Microsoft Excel of www.datplot.com to visualize data.
 
