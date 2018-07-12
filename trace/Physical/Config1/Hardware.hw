@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.6.57 SP?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="PC" Type="PC_any" Version="1.1.0.0" OrderNumber="PC">
+    <Parameter ID="ConfigurationID" Value="trace_Config1" />
+    <Parameter ID="VolatileGlobalPvSize" Value="256000" />
+    <Parameter ID="Cyclic8Duration" Value="10000" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="CF" />
+    <Parameter ID="FileDevicePath1" Value="C:\temp" />
+  </Module>
+</Hardware>

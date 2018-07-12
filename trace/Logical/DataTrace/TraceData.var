@@ -1,0 +1,16 @@
+VAR
+	g_DATA_TRACE_FILEDEVICE : STRING[80] := 'CF';
+END_VAR
+VAR CONSTANT
+	g_dataTraceColumns : ARRAY[0..g_MAX_DATA_TRACE_VARNUM_MINUS1] OF STRING[20] := ['signal1','signal2','signal3'];
+END_VAR
+VAR
+	g_dataTrace : DataTrace_Typ;
+END_VAR
+VAR CONSTANT
+	g_MAX_DATA_TRACE_RECORDS : UINT := 500; (* number of stored plc cycles (= rows)*)
+	g_MAX_DATA_TRACE_VARNUM_MINUS1 : USINT := 2;  (* number of columns - 1 *)
+END_VAR
+VAR
+	g_dataTraceRecords : ARRAY[0..g_MAX_DATA_TRACE_RECORDS] OF DataTraceRecord_Typ;
+END_VAR

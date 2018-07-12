@@ -1,0 +1,12 @@
+VAR
+	enableOld : BOOL;
+	step : UINT := 0;
+	fileName : STRING[255] := '';
+	fileNamePrefix : STRING[20] := '';
+	record : REFERENCE TO DataTraceRecord_Typ;
+	fbGetTime : DTStructureGetTime := (0);
+	dtStructure : DTStructure := (0);
+	fbFileClose : FileClose := (0);
+	fbFileWrite : FileWrite := (0);
+	fbFileCreate : FileCreate := (0);
+END_VAR

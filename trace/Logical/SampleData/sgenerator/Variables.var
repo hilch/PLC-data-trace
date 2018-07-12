@@ -1,0 +1,6 @@
+VAR
+	signal1 : REAL;
+	signal3 : REAL;
+	signal2 : REAL;
+	t : LREAL;
+END_VAR

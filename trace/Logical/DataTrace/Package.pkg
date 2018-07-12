@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.6.57 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">TraceData.typ</Object>
+    <Object Type="File">TraceData.var</Object>
+    <Object Type="Program" Language="ANSIC">datatrace</Object>
+    <Object Type="Program" Language="ANSIC">savetrace</Object>
+  </Objects>
+</Package>
