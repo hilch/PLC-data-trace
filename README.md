@@ -1,5 +1,6 @@
 # PLC-data-trace
 simple data trace for B&amp;R plcs
+(B&R Automation Studio project)
 
 records PLC variables in a high priority task and 
 save the data in CSV file afterward.
