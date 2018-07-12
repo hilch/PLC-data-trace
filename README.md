@@ -17,5 +17,5 @@ write CSV column names to g_dataTraceColumns[]
 
 
 
-use Microsoft Excel of www.datplot.com to visualize data.
+use Microsoft Excel or www.datplot.com to visualize data.
 
