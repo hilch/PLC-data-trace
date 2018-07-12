@@ -1,8 +1,9 @@
 # PLC-data-trace
 simple data trace for B&amp;R plcs
+(B&R Automation Studio project)
 
 records PLC variables in a high priority task and 
-save the data in CSV file afterward.
+save the data to CSV file afterward.
 
 Use it to find random failures in machines.
 
@@ -17,5 +18,5 @@ write CSV column names to g_dataTraceColumns[]
 
 
 
-use Microsoft Excel of www.datplot.com to visualize data.
+use Microsoft Excel or www.datplot.com to visualize data.
 
