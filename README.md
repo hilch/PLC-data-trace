@@ -19,7 +19,7 @@ Use it to find random failures in machines.
 
 # USB Stick
 
-Use https://github.com/hilch/FindUsbStickOnBAndRPlc to store data to an external USB device
+Optionally use https://github.com/hilch/FindUsbStickOnBAndRPlc to store data to an external USB device
 
 # Visualize data
 use Microsoft Excel or www.datplot.com to visualize data.
