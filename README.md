@@ -18,13 +18,11 @@ Use it to find random failures in machines.
 - [x] set **g_dataTrace.enable** to FALSE stops trace and write the CSV.
 
 # USB Stick
-
 Optionally use https://github.com/hilch/FindUsbStickOnBAndRPlc to store data to an external USB device
 
 # Visualize data
 use Microsoft Excel, [Libre Office Calc](https://de.libreoffice.org/discover/calc/) or [Datplot](https://www.datplot.com) to visualize data.
-![datplot](https://github.com/hilch/PLC-data-trace/blob/master/doc/datplot.PNG)
 
 # Visualize data with datplot
-
 ![datplotgif](https://github.com/hilch/PLC-data-trace/blob/master/doc/view_in_datplot.gif)
+![datplot](https://github.com/hilch/PLC-data-trace/blob/master/doc/datplot.PNG)
