@@ -19,4 +19,6 @@ write CSV column names to g_dataTraceColumns[]
 
 
 use Microsoft Excel or www.datplot.com to visualize data.
+![datplot](https://github.com/hilch/PLC-data-trace/blob/master/doc/datplot.PNG)
+
 
