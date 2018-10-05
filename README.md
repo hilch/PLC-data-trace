@@ -21,6 +21,7 @@ Use it to find random failures in machines.
 
 Use https://github.com/hilch/FindUsbStickOnBAndRPlc to store data to an external USB device
 
+# Visualize data
 use Microsoft Excel or www.datplot.com to visualize data.
 ![datplot](https://github.com/hilch/PLC-data-trace/blob/master/doc/datplot.PNG)
 
