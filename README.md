@@ -5,6 +5,8 @@ simple data trace for B&amp;R plcs
 records PLC variables in a high priority task and 
 save the data to CSV file afterward.
 
+![csvsample](https://github.com/hilch/PLC-data-trace/blob/master/doc/ScreenshotSampleData.PNG)
+
 Use it to find random failures in machines.
 
 usage:
