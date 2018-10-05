@@ -9,7 +9,7 @@ save the data to CSV file afterward.
 
 Use it to find random failures in machines.
 
-usage:
+# Usage
 set 'g_dataTrace.enable' to TRUE to enable cyclic trace.
 set 'g_dataTrace.enable' to FALSE stops trace and write the CSV.
 
