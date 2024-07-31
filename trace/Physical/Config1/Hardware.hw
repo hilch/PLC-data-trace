@@ -7,6 +7,6 @@
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="CF" />
-    <Parameter ID="FileDevicePath1" Value="C:\temp" />
+    <Parameter ID="FileDevicePath1" Value="USER_PATH" />
   </Module>
 </Hardware>

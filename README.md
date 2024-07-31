@@ -15,7 +15,9 @@ Use it to find random failures in machines.
 - [x] set **g_MAX_DATA_TRACE_VARNUM_MINUS1** to maximum number of trace variables (-1)
 - [x] write CSV column names to **g_dataTraceColumns[]** 
 - [x] set **g_dataTrace.enable** to TRUE to enable cyclic trace.
-- [x] set **g_dataTrace.enable** to FALSE stops trace and write the CSV.
+- [x] set **g_dataTrace.enable** to FALSE stops trace and writes the CSV.
+
+(the ArSim configuration is configured to store the CSV into folder PLC-data-trace\trace\Temp\Simulation\Config1\PC\USER)
 
 # USB Stick
 Optionally use https://github.com/hilch/FindUsbStickOnBAndRPlc to store data to an external USB device
