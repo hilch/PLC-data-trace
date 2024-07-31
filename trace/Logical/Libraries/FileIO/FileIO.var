@@ -38,7 +38,7 @@ VAR CONSTANT
 	fiERR_COM_FILE_CLOSE  			: UINT := 20715;		(*error file close*)
 	fiERR_COM_FILE_READ  			: UINT := 20716;		(*error file read*)
 	fiERR_COM_FILE_WRITE  			: UINT := 20717;		(*error file write*)
-	fiERR_COM_FILE_IOCTL  			: UINT := 20718;		(*error fiel ioctl*)
+	fiERR_COM_FILE_IOCTL  			: UINT := 20718;		(*error file ioctl*)
 	fiERR_DATA  					: UINT := 20719;		(*error data*)
 	fiERR_ASYNC_MANAGER  			: UINT := 20720;		(*error asynchron manager*)
 	fiERR_FILE_NOT_OPENED  			: UINT := 20721;		(*error file not opened*)
@@ -56,6 +56,7 @@ VAR CONSTANT
 	fiERR_NETIO_PORT				: UINT := 20733;		(*error port not supported*)
 	fiERR_NETIO_USER				: UINT := 20734;		(*error user or password*)
 	fiERR_INVALID_NBYTES			: UINT := 20735;		(*error invalid number of bytes*)
+	fiERR_NETIO_PARAMETERS			: UINT := 20736;		(*error invalid parameters to establish a connection*)
 	
 	fiERR_INIT  					: UINT := 20796;		(*error init*)
 	fiERR_DEVICE_DRIVER  			: UINT := 20797;		(*error device driver*)

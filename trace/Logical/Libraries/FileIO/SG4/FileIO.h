@@ -15,163 +15,6 @@ extern "C"
 #ifndef _BUR_PUBLIC
 #define _BUR_PUBLIC
 #endif
-/* Constants */
-#ifdef _REPLACE_CONST
- #define SET_RECURSIVE 1U
- #define FILE_RW 2U
- #define FILE_W 1U
- #define FILE_R 0U
- #define FILE_OW_ONCE 3U
- #define FILE_OW_DETMEM 2U
- #define FILE_DETMEM 1U
- #define FILE_ONCE 0U
- #define FILE_FILE 0U
- #define FILE_DIR 1U
- #define FILE_ALL 2U
- #define DIR_OW 1U
- #define ATTR_VOL_LABEL 8U
- #define ATTR_SYSTEM 4U
- #define ATTR_RDONLY 1U
- #define ATTR_HIDDEN 2U
- #define ATTR_DIRECTORY 16U
- #define ATTR_ARCHIVE 32U
- #define fiERR_SYSTEM 20799U
- #define fiERR_DEVICE_MANAGER 20798U
- #define fiERR_DEVICE_DRIVER 20797U
- #define fiERR_INIT 20796U
- #define fiERR_INVALID_NBYTES 20735U
- #define fiERR_NETIO_USER 20734U
- #define fiERR_NETIO_PORT 20733U
- #define fiERR_NETIO_IP_UNEQUAL 20732U
- #define fiERR_DEVICE_INVALID_HANDLE 20731U
- #define fiERR_DEVICE_ALREADY_EXIST 20730U
- #define fiERR_PARAMETER 20729U
- #define fiERR_DIR_INVALID_HANDLE 20728U
- #define fiERR_NOT_ENOUGH_FREEMEM 20727U
- #define fiERR_DETMEMINFO 20726U
- #define fiERR_DIR_ALREADY_EXIST 20725U
- #define fiERR_DIR_NOT_EMPTY 20724U
- #define fiERR_DIR_NOT_EXIST 20723U
- #define fiERR_INVALID_DIRECTORY 20722U
- #define fiERR_FILE_NOT_OPENED 20721U
- #define fiERR_ASYNC_MANAGER 20720U
- #define fiERR_DATA 20719U
- #define fiERR_COM_FILE_IOCTL 20718U
- #define fiERR_COM_FILE_WRITE 20717U
- #define fiERR_COM_FILE_READ 20716U
- #define fiERR_COM_FILE_CLOSE 20715U
- #define fiERR_COM_FILE_OPEN 20714U
- #define fiERR_LESS_VIRTUAL_MEMORY 20713U
- #define fiERR_FILE 20712U
- #define fiERR_SEEK 20711U
- #define fiERR_SPACE 20710U
- #define fiERR_FILE_DEVICE 20709U
- #define fiERR_FILE_NOT_FOUND 20708U
- #define fiERR_MODE 20707U
- #define fiERR_ACCESS 20706U
- #define fiERR_EXIST 20705U
- #define fiERR_INVALID_TYP 20704U
- #define fiERR_NOT_SUPPORTED 20703U
- #define fiERR_NO_MORE_ENTRIES 20702U
- #define fiERR_DATA_SIZE 20701U
- #define fiERR_INVALID_PATH 20700U
- #define fiTruncate 1U
- #define fiBOTH 2U
- #define fiDIRECTORY 1U
- #define fiFILE 0U
- #define fiREAD_WRITE 2U
- #define fiWRITE_ONLY 1U
- #define fiREAD_ONLY 0U
- #define fiOVERWRITE 2U
- #define fiRECURSIVE 1U
- #define fiATTR_VOL_LABEL 8U
- #define fiATTR_SYSTEM 4U
- #define fiATTR_RDONLY 1U
- #define fiATTR_HIDDEN 2U
- #define fiATTR_DIRECTORY 16U
- #define fiATTR_ARCHIVE 32U
-#else
- #ifndef _GLOBAL_CONST
-   #define _GLOBAL_CONST _WEAK const
- #endif
- _GLOBAL_CONST unsigned char SET_RECURSIVE;
- _GLOBAL_CONST unsigned char FILE_RW;
- _GLOBAL_CONST unsigned char FILE_W;
- _GLOBAL_CONST unsigned char FILE_R;
- _GLOBAL_CONST unsigned char FILE_OW_ONCE;
- _GLOBAL_CONST unsigned char FILE_OW_DETMEM;
- _GLOBAL_CONST unsigned char FILE_DETMEM;
- _GLOBAL_CONST unsigned char FILE_ONCE;
- _GLOBAL_CONST unsigned char FILE_FILE;
- _GLOBAL_CONST unsigned char FILE_DIR;
- _GLOBAL_CONST unsigned char FILE_ALL;
- _GLOBAL_CONST unsigned char DIR_OW;
- _GLOBAL_CONST unsigned char ATTR_VOL_LABEL;
- _GLOBAL_CONST unsigned char ATTR_SYSTEM;
- _GLOBAL_CONST unsigned char ATTR_RDONLY;
- _GLOBAL_CONST unsigned char ATTR_HIDDEN;
- _GLOBAL_CONST unsigned char ATTR_DIRECTORY;
- _GLOBAL_CONST unsigned char ATTR_ARCHIVE;
- _GLOBAL_CONST unsigned short fiERR_SYSTEM;
- _GLOBAL_CONST unsigned short fiERR_DEVICE_MANAGER;
- _GLOBAL_CONST unsigned short fiERR_DEVICE_DRIVER;
- _GLOBAL_CONST unsigned short fiERR_INIT;
- _GLOBAL_CONST unsigned short fiERR_INVALID_NBYTES;
- _GLOBAL_CONST unsigned short fiERR_NETIO_USER;
- _GLOBAL_CONST unsigned short fiERR_NETIO_PORT;
- _GLOBAL_CONST unsigned short fiERR_NETIO_IP_UNEQUAL;
- _GLOBAL_CONST unsigned short fiERR_DEVICE_INVALID_HANDLE;
- _GLOBAL_CONST unsigned short fiERR_DEVICE_ALREADY_EXIST;
- _GLOBAL_CONST unsigned short fiERR_PARAMETER;
- _GLOBAL_CONST unsigned short fiERR_DIR_INVALID_HANDLE;
- _GLOBAL_CONST unsigned short fiERR_NOT_ENOUGH_FREEMEM;
- _GLOBAL_CONST unsigned short fiERR_DETMEMINFO;
- _GLOBAL_CONST unsigned short fiERR_DIR_ALREADY_EXIST;
- _GLOBAL_CONST unsigned short fiERR_DIR_NOT_EMPTY;
- _GLOBAL_CONST unsigned short fiERR_DIR_NOT_EXIST;
- _GLOBAL_CONST unsigned short fiERR_INVALID_DIRECTORY;
- _GLOBAL_CONST unsigned short fiERR_FILE_NOT_OPENED;
- _GLOBAL_CONST unsigned short fiERR_ASYNC_MANAGER;
- _GLOBAL_CONST unsigned short fiERR_DATA;
- _GLOBAL_CONST unsigned short fiERR_COM_FILE_IOCTL;
- _GLOBAL_CONST unsigned short fiERR_COM_FILE_WRITE;
- _GLOBAL_CONST unsigned short fiERR_COM_FILE_READ;
- _GLOBAL_CONST unsigned short fiERR_COM_FILE_CLOSE;
- _GLOBAL_CONST unsigned short fiERR_COM_FILE_OPEN;
- _GLOBAL_CONST unsigned short fiERR_LESS_VIRTUAL_MEMORY;
- _GLOBAL_CONST unsigned short fiERR_FILE;
- _GLOBAL_CONST unsigned short fiERR_SEEK;
- _GLOBAL_CONST unsigned short fiERR_SPACE;
- _GLOBAL_CONST unsigned short fiERR_FILE_DEVICE;
- _GLOBAL_CONST unsigned short fiERR_FILE_NOT_FOUND;
- _GLOBAL_CONST unsigned short fiERR_MODE;
- _GLOBAL_CONST unsigned short fiERR_ACCESS;
- _GLOBAL_CONST unsigned short fiERR_EXIST;
- _GLOBAL_CONST unsigned short fiERR_INVALID_TYP;
- _GLOBAL_CONST unsigned short fiERR_NOT_SUPPORTED;
- _GLOBAL_CONST unsigned short fiERR_NO_MORE_ENTRIES;
- _GLOBAL_CONST unsigned short fiERR_DATA_SIZE;
- _GLOBAL_CONST unsigned short fiERR_INVALID_PATH;
- _GLOBAL_CONST unsigned long fiTruncate;
- _GLOBAL_CONST unsigned char fiBOTH;
- _GLOBAL_CONST unsigned char fiDIRECTORY;
- _GLOBAL_CONST unsigned char fiFILE;
- _GLOBAL_CONST unsigned char fiREAD_WRITE;
- _GLOBAL_CONST unsigned char fiWRITE_ONLY;
- _GLOBAL_CONST unsigned char fiREAD_ONLY;
- _GLOBAL_CONST unsigned char fiOVERWRITE;
- _GLOBAL_CONST unsigned char fiRECURSIVE;
- _GLOBAL_CONST unsigned char fiATTR_VOL_LABEL;
- _GLOBAL_CONST unsigned char fiATTR_SYSTEM;
- _GLOBAL_CONST unsigned char fiATTR_RDONLY;
- _GLOBAL_CONST unsigned char fiATTR_HIDDEN;
- _GLOBAL_CONST unsigned char fiATTR_DIRECTORY;
- _GLOBAL_CONST unsigned char fiATTR_ARCHIVE;
-#endif
-
-
-
-
 /* Datatypes and datatypes of function blocks */
 typedef struct fiDIR_READ_DATA
 {	unsigned char Filename[260];
@@ -699,6 +542,162 @@ _BUR_PUBLIC void DevUnlink(struct DevUnlink* inst);
 _BUR_PUBLIC void GetVolumeLabel(struct GetVolumeLabel* inst);
 _BUR_PUBLIC void GetVolumeSerialNo(struct GetVolumeSerialNo* inst);
 _BUR_PUBLIC unsigned short FileIoGetSysError(void);
+
+
+/* Constants */
+#ifdef _REPLACE_CONST
+ #define SET_RECURSIVE 1U
+ #define FILE_RW 2U
+ #define FILE_W 1U
+ #define FILE_R 0U
+ #define FILE_OW_ONCE 3U
+ #define FILE_OW_DETMEM 2U
+ #define FILE_DETMEM 1U
+ #define FILE_ONCE 0U
+ #define FILE_FILE 0U
+ #define FILE_DIR 1U
+ #define FILE_ALL 2U
+ #define DIR_OW 1U
+ #define ATTR_VOL_LABEL 8U
+ #define ATTR_SYSTEM 4U
+ #define ATTR_RDONLY 1U
+ #define ATTR_HIDDEN 2U
+ #define ATTR_DIRECTORY 16U
+ #define ATTR_ARCHIVE 32U
+ #define fiERR_SYSTEM 20799U
+ #define fiERR_DEVICE_MANAGER 20798U
+ #define fiERR_DEVICE_DRIVER 20797U
+ #define fiERR_INIT 20796U
+ #define fiERR_NETIO_PARAMETERS 20736U
+ #define fiERR_INVALID_NBYTES 20735U
+ #define fiERR_NETIO_USER 20734U
+ #define fiERR_NETIO_PORT 20733U
+ #define fiERR_NETIO_IP_UNEQUAL 20732U
+ #define fiERR_DEVICE_INVALID_HANDLE 20731U
+ #define fiERR_DEVICE_ALREADY_EXIST 20730U
+ #define fiERR_PARAMETER 20729U
+ #define fiERR_DIR_INVALID_HANDLE 20728U
+ #define fiERR_NOT_ENOUGH_FREEMEM 20727U
+ #define fiERR_DETMEMINFO 20726U
+ #define fiERR_DIR_ALREADY_EXIST 20725U
+ #define fiERR_DIR_NOT_EMPTY 20724U
+ #define fiERR_DIR_NOT_EXIST 20723U
+ #define fiERR_INVALID_DIRECTORY 20722U
+ #define fiERR_FILE_NOT_OPENED 20721U
+ #define fiERR_ASYNC_MANAGER 20720U
+ #define fiERR_DATA 20719U
+ #define fiERR_COM_FILE_IOCTL 20718U
+ #define fiERR_COM_FILE_WRITE 20717U
+ #define fiERR_COM_FILE_READ 20716U
+ #define fiERR_COM_FILE_CLOSE 20715U
+ #define fiERR_COM_FILE_OPEN 20714U
+ #define fiERR_LESS_VIRTUAL_MEMORY 20713U
+ #define fiERR_FILE 20712U
+ #define fiERR_SEEK 20711U
+ #define fiERR_SPACE 20710U
+ #define fiERR_FILE_DEVICE 20709U
+ #define fiERR_FILE_NOT_FOUND 20708U
+ #define fiERR_MODE 20707U
+ #define fiERR_ACCESS 20706U
+ #define fiERR_EXIST 20705U
+ #define fiERR_INVALID_TYP 20704U
+ #define fiERR_NOT_SUPPORTED 20703U
+ #define fiERR_NO_MORE_ENTRIES 20702U
+ #define fiERR_DATA_SIZE 20701U
+ #define fiERR_INVALID_PATH 20700U
+ #define fiTruncate 1U
+ #define fiBOTH 2U
+ #define fiDIRECTORY 1U
+ #define fiFILE 0U
+ #define fiREAD_WRITE 2U
+ #define fiWRITE_ONLY 1U
+ #define fiREAD_ONLY 0U
+ #define fiOVERWRITE 2U
+ #define fiRECURSIVE 1U
+ #define fiATTR_VOL_LABEL 8U
+ #define fiATTR_SYSTEM 4U
+ #define fiATTR_RDONLY 1U
+ #define fiATTR_HIDDEN 2U
+ #define fiATTR_DIRECTORY 16U
+ #define fiATTR_ARCHIVE 32U
+#else
+ _GLOBAL_CONST unsigned char SET_RECURSIVE;
+ _GLOBAL_CONST unsigned char FILE_RW;
+ _GLOBAL_CONST unsigned char FILE_W;
+ _GLOBAL_CONST unsigned char FILE_R;
+ _GLOBAL_CONST unsigned char FILE_OW_ONCE;
+ _GLOBAL_CONST unsigned char FILE_OW_DETMEM;
+ _GLOBAL_CONST unsigned char FILE_DETMEM;
+ _GLOBAL_CONST unsigned char FILE_ONCE;
+ _GLOBAL_CONST unsigned char FILE_FILE;
+ _GLOBAL_CONST unsigned char FILE_DIR;
+ _GLOBAL_CONST unsigned char FILE_ALL;
+ _GLOBAL_CONST unsigned char DIR_OW;
+ _GLOBAL_CONST unsigned char ATTR_VOL_LABEL;
+ _GLOBAL_CONST unsigned char ATTR_SYSTEM;
+ _GLOBAL_CONST unsigned char ATTR_RDONLY;
+ _GLOBAL_CONST unsigned char ATTR_HIDDEN;
+ _GLOBAL_CONST unsigned char ATTR_DIRECTORY;
+ _GLOBAL_CONST unsigned char ATTR_ARCHIVE;
+ _GLOBAL_CONST unsigned short fiERR_SYSTEM;
+ _GLOBAL_CONST unsigned short fiERR_DEVICE_MANAGER;
+ _GLOBAL_CONST unsigned short fiERR_DEVICE_DRIVER;
+ _GLOBAL_CONST unsigned short fiERR_INIT;
+ _GLOBAL_CONST unsigned short fiERR_NETIO_PARAMETERS;
+ _GLOBAL_CONST unsigned short fiERR_INVALID_NBYTES;
+ _GLOBAL_CONST unsigned short fiERR_NETIO_USER;
+ _GLOBAL_CONST unsigned short fiERR_NETIO_PORT;
+ _GLOBAL_CONST unsigned short fiERR_NETIO_IP_UNEQUAL;
+ _GLOBAL_CONST unsigned short fiERR_DEVICE_INVALID_HANDLE;
+ _GLOBAL_CONST unsigned short fiERR_DEVICE_ALREADY_EXIST;
+ _GLOBAL_CONST unsigned short fiERR_PARAMETER;
+ _GLOBAL_CONST unsigned short fiERR_DIR_INVALID_HANDLE;
+ _GLOBAL_CONST unsigned short fiERR_NOT_ENOUGH_FREEMEM;
+ _GLOBAL_CONST unsigned short fiERR_DETMEMINFO;
+ _GLOBAL_CONST unsigned short fiERR_DIR_ALREADY_EXIST;
+ _GLOBAL_CONST unsigned short fiERR_DIR_NOT_EMPTY;
+ _GLOBAL_CONST unsigned short fiERR_DIR_NOT_EXIST;
+ _GLOBAL_CONST unsigned short fiERR_INVALID_DIRECTORY;
+ _GLOBAL_CONST unsigned short fiERR_FILE_NOT_OPENED;
+ _GLOBAL_CONST unsigned short fiERR_ASYNC_MANAGER;
+ _GLOBAL_CONST unsigned short fiERR_DATA;
+ _GLOBAL_CONST unsigned short fiERR_COM_FILE_IOCTL;
+ _GLOBAL_CONST unsigned short fiERR_COM_FILE_WRITE;
+ _GLOBAL_CONST unsigned short fiERR_COM_FILE_READ;
+ _GLOBAL_CONST unsigned short fiERR_COM_FILE_CLOSE;
+ _GLOBAL_CONST unsigned short fiERR_COM_FILE_OPEN;
+ _GLOBAL_CONST unsigned short fiERR_LESS_VIRTUAL_MEMORY;
+ _GLOBAL_CONST unsigned short fiERR_FILE;
+ _GLOBAL_CONST unsigned short fiERR_SEEK;
+ _GLOBAL_CONST unsigned short fiERR_SPACE;
+ _GLOBAL_CONST unsigned short fiERR_FILE_DEVICE;
+ _GLOBAL_CONST unsigned short fiERR_FILE_NOT_FOUND;
+ _GLOBAL_CONST unsigned short fiERR_MODE;
+ _GLOBAL_CONST unsigned short fiERR_ACCESS;
+ _GLOBAL_CONST unsigned short fiERR_EXIST;
+ _GLOBAL_CONST unsigned short fiERR_INVALID_TYP;
+ _GLOBAL_CONST unsigned short fiERR_NOT_SUPPORTED;
+ _GLOBAL_CONST unsigned short fiERR_NO_MORE_ENTRIES;
+ _GLOBAL_CONST unsigned short fiERR_DATA_SIZE;
+ _GLOBAL_CONST unsigned short fiERR_INVALID_PATH;
+ _GLOBAL_CONST unsigned long fiTruncate;
+ _GLOBAL_CONST unsigned char fiBOTH;
+ _GLOBAL_CONST unsigned char fiDIRECTORY;
+ _GLOBAL_CONST unsigned char fiFILE;
+ _GLOBAL_CONST unsigned char fiREAD_WRITE;
+ _GLOBAL_CONST unsigned char fiWRITE_ONLY;
+ _GLOBAL_CONST unsigned char fiREAD_ONLY;
+ _GLOBAL_CONST unsigned char fiOVERWRITE;
+ _GLOBAL_CONST unsigned char fiRECURSIVE;
+ _GLOBAL_CONST unsigned char fiATTR_VOL_LABEL;
+ _GLOBAL_CONST unsigned char fiATTR_SYSTEM;
+ _GLOBAL_CONST unsigned char fiATTR_RDONLY;
+ _GLOBAL_CONST unsigned char fiATTR_HIDDEN;
+ _GLOBAL_CONST unsigned char fiATTR_DIRECTORY;
+ _GLOBAL_CONST unsigned char fiATTR_ARCHIVE;
+#endif
+
+
 
 
 #ifdef __cplusplus
