@@ -23,8 +23,50 @@ Use it to find random failures in machines.
 Optionally use https://github.com/hilch/FindUsbStickOnBAndRPlc to store data to an external USB device
 
 # Visualize data
-use Microsoft Excel, [Libre Office Calc](https://de.libreoffice.org/discover/calc/) or [Datplot](https://www.datplot.com) to visualize data.
+use Microsoft Excel, [Libre Office Calc](https://de.libreoffice.org/discover/calc/) or [just use Python](https://github.com/hilch/PLC-data-trace/Python/plot.py) to visualize data.
 
-# Visualize data with datplot
-![datplotgif](https://github.com/hilch/PLC-data-trace/blob/master/doc/view_in_datplot.gif)
-![datplot](https://github.com/hilch/PLC-data-trace/blob/master/doc/datplot.PNG)
+# Python Matplotlib
+
+example:
+
+```Python
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Load the CSV file
+filename = 'sample.csv'
+data = pd.read_csv(filename)
+
+# Create a figure and a set of subplots
+fig, axs = plt.subplots(3, 1, figsize=(10, 10))
+
+
+# First subplot
+axs[0].plot(data['index'], data['signal1'], marker='o', linestyle='-', color='r')
+axs[0].set_title(filename)
+axs[0].set_xlabel('time')
+axs[0].set_ylabel('signal1')
+
+# Second subplot
+axs[1].plot(data['index'], data['signal2'], marker='o', linestyle='-', color='g')
+axs[1].set_title(filename)
+axs[1].set_xlabel('time')
+axs[1].set_ylabel('signal2')
+
+# Third subplot
+axs[2].plot(data['index'], data['signal3'], marker='o', linestyle='-', color='b')
+axs[2].set_title(filename)
+axs[2].set_xlabel('time')
+axs[2].set_ylabel('signal3')
+
+
+# Adjust layout to prevent overlap
+plt.tight_layout()
+
+# Show the plot
+plt.show()
+```
+
+output:
+
+![sample.png](https://github.com/hilch/PLC-data-trace/blob/master/doc/sample.PNG)
