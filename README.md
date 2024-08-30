@@ -23,7 +23,7 @@ Use it to find random failures in machines.
 Optionally use https://github.com/hilch/FindUsbStickOnBAndRPlc to store data to an external USB device
 
 # Visualize data
-use Microsoft Excel, [Libre Office Calc](https://de.libreoffice.org/discover/calc/) or [just use Python](https://github.com/hilch/PLC-data-trace/Python/plot.py) to visualize data.
+use Microsoft Excel, [Libre Office Calc](https://de.libreoffice.org/discover/calc/) or [just use Python](https://github.com/hilch/PLC-data-trace/tree/AS6X/python) to visualize data.
 
 # Python Matplotlib
 
