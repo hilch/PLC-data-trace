@@ -3,3 +3,5 @@ Diagnosis
 Binaries
 *.set
 *.isopen
+python/.venv/
+python/.vscode/launch.json
